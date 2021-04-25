@@ -41,9 +41,10 @@ jobs:
         run: |
           git clone https://github.com/coolsnowwolf/lede
           mv ./lede/* ./
+          git clone --depth 1 -b master https://github.com/vernesong/OpenClash.git && mv OpenClash/luci-app-openclash ./package/luci-app-openclash
       - name: Install addons
         run: |
-          echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
+          echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
@@ -91,6 +92,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-mwan3=y
           # CONFIG_PACKAGE_luci-app-mwan3helper=y
           CONFIG_PACKAGE_luci-app-openvpn=y
+          CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_luci-app-openvpn-server=y
           CONFIG_PACKAGE_luci-app-samba=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
