@@ -41,8 +41,9 @@ jobs:
         run: |
           git clone https://github.com/coolsnowwolf/lede
           mv ./lede/* ./
-          git clone --depth 1 -b master https://github.com/vernesong/OpenClash.git && mv OpenClash/luci-app-openclash ./package/luci-app-openclash
-          git clone --depth 1 -b master https://github.com/jerrykuku/luci-app-vssr.git && mv luci-app-vssr ./package/luci-app-vssr
+          git clone --depth 1 -b master https://github.com/vernesong/OpenClash.git && mv OpenClash/luci-app-openclash ./package/lean/luci-app-openclash
+          git clone --depth 1 -b master https://github.com/jerrykuku/luci-app-vssr.git && mv luci-app-vssr ./package/lean/luci-app-vssr
+          git clone --depth 1 -b master https://github.com/jerrykuku/lua-maxminddb.git && mv lua-maxminddb ./package/lean/lua-maxminddb
       - name: Install addons
         run: |
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default
