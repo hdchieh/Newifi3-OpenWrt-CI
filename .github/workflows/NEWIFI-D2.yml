@@ -66,7 +66,9 @@ jobs:
 
           # Gzip
           CONFIG_TARGET_IMAGES_GZIP=y
-
+          
+          CONFIG_FEED_helloworld=y
+          
           # IPv6
           CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
           CONFIG_PACKAGE_ipv6helper=y
@@ -103,6 +105,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
+          CONFIG_PACKAGE_luci-app-unblockmusic=y
+          CONFIG_UnblockNeteaseMusic_Go=y
           # CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           # CONFIG_PACKAGE_luci-app-usb-printer=y
