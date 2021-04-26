@@ -45,7 +45,7 @@ jobs:
           git clone --depth 1 -b master https://github.com/jerrykuku/luci-app-vssr.git && mv luci-app-vssr ./package/luci-app-vssr
       - name: Install addons
         run: |
-
+          echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
