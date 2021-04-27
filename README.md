@@ -1,11 +1,11 @@
 # 新路由3（Newifi-D2）自动编译最新版OpenWrt（Lede）
 
-*每12小时自动编译一次，在Action中下载*
+*每7天自动编译一次，在Action中下载*
 
 ## 编译特性
 - 默认主题为argon
 - 默认使用开源WIFI驱动（支持802.11kvr）
-- 默认启用helloworld
+- 默认启用helloworld(vssr)
 - 外挂存储支持格式exfat, ntfs, ext4
 
 ## 插件列表
@@ -20,6 +20,7 @@
 | samba                  | Samba文件共享       |
 | ttyd                   | 网页终端            |
 | xlnetacc               | 迅雷快鸟            |
+| openclash              | -                  |
 | helloworld             | -                  |
 
 
