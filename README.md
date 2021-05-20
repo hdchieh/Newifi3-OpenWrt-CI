@@ -7,6 +7,7 @@
 - 默认使用开源WIFI驱动（支持802.11kvr）
 - 默认启用helloworld(vssr)
 - 外挂存储支持格式exfat, ntfs, ext4
+- 主要使用openclash 垃圾newifi3的usb3.0坏了 不能额外安装了 气死了！！
 
 ## 插件列表
 
